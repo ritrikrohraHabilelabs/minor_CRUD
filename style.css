@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Rowdies');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #F0EBCE;
+}
+
+.main header {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #395144;
+    color: #F0EBCE;
+    font-family: 'Rowdies', cursive;
+}
+
+.main .container {
+    width: 90%;
+    margin: 20px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.main .container .formDiv,
+.main .container .displayDiv {
+    width: 48%;
+    padding: 50px;
+    /* border: 5px solid #AA8B56; */
+    box-shadow: -15px 15px;
+    background-color: #4E6C50;
+    border-radius: 10px;
+}
+
+.main .container .displayDiv {
+    /* border: 5px solid #4E6C50; */
+    background-color: #AA8B56;
+}
+
+.formDiv form {
+    width: 100%;
+}
+
+.formDiv form input[type=text] {
+    width: 100%;
+    padding: 20px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    border: none;
+    box-shadow: -5px 5px;
+    background-color: #F0EBCE;
+}
+
+.formDiv form input[type=reset],
+.formDiv form input[type=submit],
+.formDiv form input[type=button] {
+    width: 49.5%;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    box-shadow: -5px 5px;
+    background-color: #F0EBCE;
+}
+
+.hidden {
+    display: none;
+}
+
+.displayDiv table {
+    width: 100%;
+    margin-bottom: 15px;
+    /* border: 1px solid black; */
+}
+
+.displayDiv table th {
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: #F0EBCE;
+    /* border-collapse: collapse; */
+}
+
+table td,
+table th {
+    text-align: center;
+    padding: 5px;
+}
+
+table td span {
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+.displayDiv .dataStatus button {
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    box-shadow: -5px 5px;
+    background-color: #F0EBCE;
+    width: 100%;
+}
+
+.displayDiv .dataStatus h3 {
+    margin-top: 10px;
+    text-align: center;
+}

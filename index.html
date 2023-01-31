@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ritrik's Phone Directory</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="main">
+        <header>
+            <h1>RITRIK'S &nbsp;&nbsp; PHONE &nbsp;&nbsp; DIRECTORY</h1>
+        </header>
+        <div class="container">
+            <div class="formDiv">
+                <form action="" onsubmit="formSubmit(event)">
+                    <input type="text" oninput="inputCheck(this)" name="fullName" id="fullName"
+                        placeholder="CONTACT NAME">
+                    <input type="text" oninput="inputCheck(this)" name="contactNum" id="contactNum"
+                        placeholder="CONTACT NUMBER">
+                    <input type="text" oninput="inputCheck(this)" name="relation" id="relation" placeholder="RELATION">
+                    <input type="reset" name="clear" id="clear" value="CLEAR">
+                    <input type="submit" name="submit" id="submit" value="SUBMIT">
+                    <input type="button" class="hidden" name="update" id="update" value="UPDATE">
+                </form>
+            </div>
+            <div class="displayDiv">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>S NO.</th>
+                            <th>NAME</th>
+                            <th>NUMBER</th>
+                            <th>ACTIONS</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                </table>
+                <div class="dataStatus">
+                    <button class="hidden" id="clearButton" onclick="deleteAll()">CLEAR ALL</button>
+                    <h3 id="emptyText">EMPTY DIRECTORY</h1>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+
+</html>
